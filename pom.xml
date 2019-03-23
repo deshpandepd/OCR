@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>OCRDemo</groupId>
+  <artifactId>OCRDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>tesseract</artifactId>
+            <version>3.03-rc1-0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.lept4j/lept4j -->
+<dependency>
+    <groupId>net.sourceforge.lept4j</groupId>
+    <artifactId>lept4j</artifactId>
+    <version>1.11.0</version>
+</dependency>
+        <!-- https://mvnrepository.com/artifact/com.mortennobel/java-image-scaling -->
+<dependency>
+    <groupId>com.mortennobel</groupId>
+    <artifactId>java-image-scaling</artifactId>
+    <version>0.8.6</version>
+</dependency>
+        <dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>itext</artifactId>
+    <version>4.2.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
+ 
+
+    </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
